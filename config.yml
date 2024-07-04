@@ -1,0 +1,5 @@
+maxQueueSize: 10
+messagePrefix: "&6[Queue] &r"
+notifyJoin: true
+notifyLeave: true
+joinCooldown: 60  # Cooldown in seconds

@@ -1,0 +1,36 @@
+name: QueuePlugin
+version: 1.4
+main: com.example.queueplugin.QueuePlugin
+api-version: 1.16
+commands:
+  joinqueue:
+    description: Join the queue
+    permission: queueplugin.join
+  leavequeue:
+    description: Leave the queue
+    permission: queueplugin.leave
+  nextinqueue:
+    description: Get the next player in the queue
+    permission: queueplugin.next
+  viewqueue:
+    description: View the current queue
+    permission: queueplugin.view
+  clearqueue:
+    description: Clear the queue
+    permission: queueplugin.clear
+permissions:
+  queueplugin.join:
+    description: Allows the player to join the queue
+    default: true
+  queueplugin.leave:
+    description: Allows the player to leave the queue
+    default: true
+  queueplugin.next:
+    description: Allows the player to get the next player in the queue
+    default: op
+  queueplugin.view:
+    description: Allows the player to view the queue
+    default: true
+  queueplugin.clear:
+    description: Allows the player to clear the queue
+    default: op
